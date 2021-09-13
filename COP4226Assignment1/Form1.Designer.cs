@@ -48,7 +48,6 @@ namespace COP4226Assignment1
             this.Dec = new System.Windows.Forms.Button();
             this.leftParenthesis = new System.Windows.Forms.Button();
             this.rightParenthesis = new System.Windows.Forms.Button();
-            this.reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -58,6 +57,7 @@ namespace COP4226Assignment1
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(490, 114);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // numZero
@@ -68,7 +68,7 @@ namespace COP4226Assignment1
             this.numZero.TabIndex = 1;
             this.numZero.Text = "0";
             this.numZero.UseVisualStyleBackColor = true;
-            this.numZero.Click += new System.EventHandler(this.button1_Click);
+            this.numZero.Click += new System.EventHandler(this.numZero_Click);
             // 
             // numNine
             // 
@@ -88,6 +88,7 @@ namespace COP4226Assignment1
             this.numEight.TabIndex = 3;
             this.numEight.Text = "8";
             this.numEight.UseVisualStyleBackColor = true;
+            this.numEight.Click += new System.EventHandler(this.numEight_Click);
             // 
             // numSeven
             // 
@@ -97,6 +98,7 @@ namespace COP4226Assignment1
             this.numSeven.TabIndex = 4;
             this.numSeven.Text = "7";
             this.numSeven.UseVisualStyleBackColor = true;
+            this.numSeven.Click += new System.EventHandler(this.numSeven_Click);
             // 
             // numSix
             // 
@@ -106,6 +108,7 @@ namespace COP4226Assignment1
             this.numSix.TabIndex = 5;
             this.numSix.Text = "6";
             this.numSix.UseVisualStyleBackColor = true;
+            this.numSix.Click += new System.EventHandler(this.numSix_Click);
             // 
             // numFive
             // 
@@ -115,6 +118,7 @@ namespace COP4226Assignment1
             this.numFive.TabIndex = 6;
             this.numFive.Text = "5";
             this.numFive.UseVisualStyleBackColor = true;
+            this.numFive.Click += new System.EventHandler(this.numFive_Click);
             // 
             // numFour
             // 
@@ -124,7 +128,7 @@ namespace COP4226Assignment1
             this.numFour.TabIndex = 7;
             this.numFour.Text = "4";
             this.numFour.UseVisualStyleBackColor = true;
-            this.numFour.Click += new System.EventHandler(this.button6_Click);
+            this.numFour.Click += new System.EventHandler(this.numFour_Click);
             // 
             // numThree
             // 
@@ -134,6 +138,7 @@ namespace COP4226Assignment1
             this.numThree.TabIndex = 8;
             this.numThree.Text = "3";
             this.numThree.UseVisualStyleBackColor = true;
+            this.numThree.Click += new System.EventHandler(this.numThree_Click);
             // 
             // numTwo
             // 
@@ -143,6 +148,7 @@ namespace COP4226Assignment1
             this.numTwo.TabIndex = 9;
             this.numTwo.Text = "2";
             this.numTwo.UseVisualStyleBackColor = true;
+            this.numTwo.Click += new System.EventHandler(this.numTwo_Click);
             // 
             // numOne
             // 
@@ -152,6 +158,7 @@ namespace COP4226Assignment1
             this.numOne.TabIndex = 10;
             this.numOne.Text = "1";
             this.numOne.UseVisualStyleBackColor = true;
+            this.numOne.Click += new System.EventHandler(this.numOne_Click);
             // 
             // divide
             // 
@@ -208,10 +215,11 @@ namespace COP4226Assignment1
             this.Dec.TabIndex = 16;
             this.Dec.Text = ".";
             this.Dec.UseVisualStyleBackColor = true;
+            this.Dec.Click += new System.EventHandler(this.decimal_Click);
             // 
             // leftParenthesis
             // 
-            this.leftParenthesis.Location = new System.Drawing.Point(136, 142);
+            this.leftParenthesis.Location = new System.Drawing.Point(260, 142);
             this.leftParenthesis.Name = "leftParenthesis";
             this.leftParenthesis.Size = new System.Drawing.Size(118, 97);
             this.leftParenthesis.TabIndex = 17;
@@ -220,28 +228,18 @@ namespace COP4226Assignment1
             // 
             // rightParenthesis
             // 
-            this.rightParenthesis.Location = new System.Drawing.Point(260, 142);
+            this.rightParenthesis.Location = new System.Drawing.Point(384, 142);
             this.rightParenthesis.Name = "rightParenthesis";
             this.rightParenthesis.Size = new System.Drawing.Size(118, 97);
             this.rightParenthesis.TabIndex = 18;
             this.rightParenthesis.Text = ")";
             this.rightParenthesis.UseVisualStyleBackColor = true;
             // 
-            // reset
-            // 
-            this.reset.Location = new System.Drawing.Point(384, 142);
-            this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(118, 97);
-            this.reset.TabIndex = 19;
-            this.reset.Text = "clear";
-            this.reset.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 664);
-            this.Controls.Add(this.reset);
             this.Controls.Add(this.rightParenthesis);
             this.Controls.Add(this.leftParenthesis);
             this.Controls.Add(this.Dec);
@@ -290,7 +288,6 @@ namespace COP4226Assignment1
         private System.Windows.Forms.Button Dec;
         private System.Windows.Forms.Button leftParenthesis;
         private System.Windows.Forms.Button rightParenthesis;
-        private System.Windows.Forms.Button reset;
     }
 }
 
