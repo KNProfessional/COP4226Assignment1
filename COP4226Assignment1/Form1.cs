@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace COP4226Assignment1
@@ -17,39 +11,46 @@ namespace COP4226Assignment1
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void SendTextToTextBox(string str)
         {
-
+            this.textBox1.Text += str;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ClearTextBox()
         {
-
+            this.textBox1.Text = "";
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void CalculateResult(object sender, EventArgs e)
         {
+            string text = this.textBox1.Text;
+            DataTable dt = new DataTable();
+            var v = new object();
+            try
+            {
+                Console.WriteLine("text: ", text);
+                v = dt.Compute(text, "");
+                Console.WriteLine("v: ", v);
+            }
+            catch (Exception x)
+            {
+                v = "NaN";
+                Console.WriteLine("exception e: ", x);
+            }
 
+
+            this.textBox1.Text = v.ToString();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void AddButtonValueToTextBox(object sender, EventArgs e)
         {
-
+            string buttonValue = (sender as Button).Text;
+            this.SendTextToTextBox(buttonValue);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void ClearButtonHandler(object sender, EventArgs e)
         {
-
-        }
-
-        private void numNine_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void divide_Click(object sender, EventArgs e)
-        {
-
+            this.ClearTextBox();
         }
     }
 }
