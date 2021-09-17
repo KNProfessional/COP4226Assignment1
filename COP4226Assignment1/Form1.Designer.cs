@@ -53,194 +53,230 @@ namespace COP4226Assignment1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 9);
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(8, 6);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(490, 114);
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(328, 75);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Click += new System.EventHandler(this.ClearButtonHandler);
             // 
             // numZero
             // 
-            this.numZero.Location = new System.Drawing.Point(12, 554);
+            this.numZero.Location = new System.Drawing.Point(8, 360);
+            this.numZero.Margin = new System.Windows.Forms.Padding(2);
             this.numZero.Name = "numZero";
-            this.numZero.Size = new System.Drawing.Size(118, 97);
+            this.numZero.Size = new System.Drawing.Size(79, 63);
             this.numZero.TabIndex = 1;
             this.numZero.Text = "0";
             this.numZero.UseVisualStyleBackColor = true;
-            this.numZero.Click += new System.EventHandler(this.button1_Click);
+            this.numZero.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // numNine
             // 
-            this.numNine.Location = new System.Drawing.Point(260, 245);
+            this.numNine.Location = new System.Drawing.Point(173, 159);
+            this.numNine.Margin = new System.Windows.Forms.Padding(2);
             this.numNine.Name = "numNine";
-            this.numNine.Size = new System.Drawing.Size(118, 97);
+            this.numNine.Size = new System.Drawing.Size(79, 63);
             this.numNine.TabIndex = 2;
             this.numNine.Text = "9";
             this.numNine.UseVisualStyleBackColor = true;
-            this.numNine.Click += new System.EventHandler(this.numNine_Click);
+            this.numNine.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // numEight
             // 
-            this.numEight.Location = new System.Drawing.Point(136, 245);
+            this.numEight.Location = new System.Drawing.Point(91, 159);
+            this.numEight.Margin = new System.Windows.Forms.Padding(2);
             this.numEight.Name = "numEight";
-            this.numEight.Size = new System.Drawing.Size(118, 97);
+            this.numEight.Size = new System.Drawing.Size(79, 63);
             this.numEight.TabIndex = 3;
             this.numEight.Text = "8";
             this.numEight.UseVisualStyleBackColor = true;
+            this.numEight.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // numSeven
             // 
-            this.numSeven.Location = new System.Drawing.Point(12, 245);
+            this.numSeven.Location = new System.Drawing.Point(8, 159);
+            this.numSeven.Margin = new System.Windows.Forms.Padding(2);
             this.numSeven.Name = "numSeven";
-            this.numSeven.Size = new System.Drawing.Size(118, 97);
+            this.numSeven.Size = new System.Drawing.Size(79, 63);
             this.numSeven.TabIndex = 4;
             this.numSeven.Text = "7";
             this.numSeven.UseVisualStyleBackColor = true;
+            this.numSeven.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // numSix
             // 
-            this.numSix.Location = new System.Drawing.Point(260, 348);
+            this.numSix.Location = new System.Drawing.Point(173, 226);
+            this.numSix.Margin = new System.Windows.Forms.Padding(2);
             this.numSix.Name = "numSix";
-            this.numSix.Size = new System.Drawing.Size(118, 97);
+            this.numSix.Size = new System.Drawing.Size(79, 63);
             this.numSix.TabIndex = 5;
             this.numSix.Text = "6";
             this.numSix.UseVisualStyleBackColor = true;
+            this.numSix.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // numFive
             // 
-            this.numFive.Location = new System.Drawing.Point(136, 348);
+            this.numFive.Location = new System.Drawing.Point(91, 226);
+            this.numFive.Margin = new System.Windows.Forms.Padding(2);
             this.numFive.Name = "numFive";
-            this.numFive.Size = new System.Drawing.Size(118, 97);
+            this.numFive.Size = new System.Drawing.Size(79, 63);
             this.numFive.TabIndex = 6;
             this.numFive.Text = "5";
             this.numFive.UseVisualStyleBackColor = true;
+            this.numFive.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // numFour
             // 
-            this.numFour.Location = new System.Drawing.Point(12, 348);
+            this.numFour.Location = new System.Drawing.Point(8, 226);
+            this.numFour.Margin = new System.Windows.Forms.Padding(2);
             this.numFour.Name = "numFour";
-            this.numFour.Size = new System.Drawing.Size(118, 97);
+            this.numFour.Size = new System.Drawing.Size(79, 63);
             this.numFour.TabIndex = 7;
             this.numFour.Text = "4";
             this.numFour.UseVisualStyleBackColor = true;
-            this.numFour.Click += new System.EventHandler(this.button6_Click);
+            this.numFour.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // numThree
             // 
-            this.numThree.Location = new System.Drawing.Point(260, 451);
+            this.numThree.Location = new System.Drawing.Point(173, 293);
+            this.numThree.Margin = new System.Windows.Forms.Padding(2);
             this.numThree.Name = "numThree";
-            this.numThree.Size = new System.Drawing.Size(118, 97);
+            this.numThree.Size = new System.Drawing.Size(79, 63);
             this.numThree.TabIndex = 8;
             this.numThree.Text = "3";
             this.numThree.UseVisualStyleBackColor = true;
+            this.numThree.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // numTwo
             // 
-            this.numTwo.Location = new System.Drawing.Point(136, 451);
+            this.numTwo.Location = new System.Drawing.Point(91, 293);
+            this.numTwo.Margin = new System.Windows.Forms.Padding(2);
             this.numTwo.Name = "numTwo";
-            this.numTwo.Size = new System.Drawing.Size(118, 97);
+            this.numTwo.Size = new System.Drawing.Size(79, 63);
             this.numTwo.TabIndex = 9;
             this.numTwo.Text = "2";
             this.numTwo.UseVisualStyleBackColor = true;
+            this.numTwo.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // numOne
             // 
-            this.numOne.Location = new System.Drawing.Point(12, 451);
+            this.numOne.Location = new System.Drawing.Point(8, 293);
+            this.numOne.Margin = new System.Windows.Forms.Padding(2);
             this.numOne.Name = "numOne";
-            this.numOne.Size = new System.Drawing.Size(118, 97);
+            this.numOne.Size = new System.Drawing.Size(79, 63);
             this.numOne.TabIndex = 10;
             this.numOne.Text = "1";
             this.numOne.UseVisualStyleBackColor = true;
+            this.numOne.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // divide
             // 
-            this.divide.Location = new System.Drawing.Point(384, 245);
+            this.divide.Location = new System.Drawing.Point(256, 159);
+            this.divide.Margin = new System.Windows.Forms.Padding(2);
             this.divide.Name = "divide";
-            this.divide.Size = new System.Drawing.Size(118, 97);
+            this.divide.Size = new System.Drawing.Size(79, 63);
             this.divide.TabIndex = 11;
             this.divide.Text = "/";
             this.divide.UseVisualStyleBackColor = true;
-            this.divide.Click += new System.EventHandler(this.divide_Click);
+            this.divide.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // multiply
             // 
-            this.multiply.Location = new System.Drawing.Point(384, 348);
+            this.multiply.Location = new System.Drawing.Point(256, 226);
+            this.multiply.Margin = new System.Windows.Forms.Padding(2);
             this.multiply.Name = "multiply";
-            this.multiply.Size = new System.Drawing.Size(118, 97);
+            this.multiply.Size = new System.Drawing.Size(79, 63);
             this.multiply.TabIndex = 12;
             this.multiply.Text = "*";
             this.multiply.UseVisualStyleBackColor = true;
+            this.multiply.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // minus
             // 
-            this.minus.Location = new System.Drawing.Point(384, 451);
+            this.minus.Location = new System.Drawing.Point(256, 293);
+            this.minus.Margin = new System.Windows.Forms.Padding(2);
             this.minus.Name = "minus";
-            this.minus.Size = new System.Drawing.Size(118, 97);
+            this.minus.Size = new System.Drawing.Size(79, 63);
             this.minus.TabIndex = 13;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // plus
             // 
-            this.plus.Location = new System.Drawing.Point(384, 554);
+            this.plus.Location = new System.Drawing.Point(256, 360);
+            this.plus.Margin = new System.Windows.Forms.Padding(2);
             this.plus.Name = "plus";
-            this.plus.Size = new System.Drawing.Size(118, 97);
+            this.plus.Size = new System.Drawing.Size(79, 63);
             this.plus.TabIndex = 14;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // equals
             // 
-            this.equals.Location = new System.Drawing.Point(260, 554);
+            this.equals.Location = new System.Drawing.Point(173, 360);
+            this.equals.Margin = new System.Windows.Forms.Padding(2);
             this.equals.Name = "equals";
-            this.equals.Size = new System.Drawing.Size(118, 97);
+            this.equals.Size = new System.Drawing.Size(79, 63);
             this.equals.TabIndex = 15;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = true;
-            this.equals.Click += new System.EventHandler(this.button5_Click);
+            this.equals.Click += new System.EventHandler(this.CalculateResult);
             // 
             // Dec
             // 
-            this.Dec.Location = new System.Drawing.Point(136, 554);
+            this.Dec.Location = new System.Drawing.Point(91, 360);
+            this.Dec.Margin = new System.Windows.Forms.Padding(2);
             this.Dec.Name = "Dec";
-            this.Dec.Size = new System.Drawing.Size(118, 97);
+            this.Dec.Size = new System.Drawing.Size(79, 63);
             this.Dec.TabIndex = 16;
             this.Dec.Text = ".";
             this.Dec.UseVisualStyleBackColor = true;
+            this.Dec.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // leftParenthesis
             // 
-            this.leftParenthesis.Location = new System.Drawing.Point(136, 142);
+            this.leftParenthesis.Location = new System.Drawing.Point(91, 92);
+            this.leftParenthesis.Margin = new System.Windows.Forms.Padding(2);
             this.leftParenthesis.Name = "leftParenthesis";
-            this.leftParenthesis.Size = new System.Drawing.Size(118, 97);
+            this.leftParenthesis.Size = new System.Drawing.Size(79, 63);
             this.leftParenthesis.TabIndex = 17;
             this.leftParenthesis.Text = "(";
             this.leftParenthesis.UseVisualStyleBackColor = true;
+            this.leftParenthesis.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // rightParenthesis
             // 
-            this.rightParenthesis.Location = new System.Drawing.Point(260, 142);
+            this.rightParenthesis.Location = new System.Drawing.Point(173, 92);
+            this.rightParenthesis.Margin = new System.Windows.Forms.Padding(2);
             this.rightParenthesis.Name = "rightParenthesis";
-            this.rightParenthesis.Size = new System.Drawing.Size(118, 97);
+            this.rightParenthesis.Size = new System.Drawing.Size(79, 63);
             this.rightParenthesis.TabIndex = 18;
             this.rightParenthesis.Text = ")";
             this.rightParenthesis.UseVisualStyleBackColor = true;
+            this.rightParenthesis.Click += new System.EventHandler(this.AddButtonValueToTextBox);
             // 
             // reset
             // 
-            this.reset.Location = new System.Drawing.Point(384, 142);
+            this.reset.Location = new System.Drawing.Point(256, 92);
+            this.reset.Margin = new System.Windows.Forms.Padding(2);
             this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(118, 97);
+            this.reset.Size = new System.Drawing.Size(79, 63);
             this.reset.TabIndex = 19;
             this.reset.Text = "clear";
             this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.ClearButtonHandler);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 664);
+            this.ClientSize = new System.Drawing.Size(341, 432);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.rightParenthesis);
             this.Controls.Add(this.leftParenthesis);
@@ -261,9 +297,9 @@ namespace COP4226Assignment1
             this.Controls.Add(this.numNine);
             this.Controls.Add(this.numZero);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Calculator";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
